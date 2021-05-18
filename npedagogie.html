@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>LST IRM | Pedagogie</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/fstm_favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			  <div class="modal-header tit-up">
+				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				  <h4 class="modal-title">Connection</h4>
+			  </div>
+			  <div class="modal-body customer-box">
+				  <!-- Nav tabs -->
+  
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+					  <div class="tab-pane active" id="Login">
+						  <form role="form" class="form-horizontal" action="includes/login.inc.php" method="POST">
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" id="email1" placeholder="CNE" type="text" name="cne">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" id="exampleInputPassword1" placeholder="MOT DE PASSE" type="password" name="pwd">
+								  </div>
+							  </div>
+							  <div class="row">
+								  <div class="col-sm-10">
+									  <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										  Se connecter
+									  </button>
+									  <a class="for-pwd" href="javascript:;">Mot de passe oublie	?</a>
+								  </div>
+							  </div>
+						  </form>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+		</div>
+	  </div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+	
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img class="img-fluid img-thumbnail img-responsive" src="images/uh2_favicon.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Acceuil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="candidature.html">Candidature</a></li>
+						<li class="nav-item"><a class="nav-link" href="encadrants.html">Encadrants</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Rechercher</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="opportunitees.html">Opportunitees</a>
+								<a class="dropdown-item" href="clubs.html">Clubs</a>
+							</div>
+						</li>
+                        <li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">A propos</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="nlicence.html">Notre licence</a>
+								<a class="dropdown-item" href="nmodules.html">Nos modules</a>
+								<a class="dropdown-item" href="npedagogie.html">Notre pedagogie</a>
+                                <a class="dropdown-item" href="nreglements.html">Nos reglements</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login">Mon Compte</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Se connecter</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+    <div class="all-title-box">
+		<div class="container text-center">
+			<h1>Notre Pédagogie</h1>
+		</div>
+	</div>
+
+	<table class="table" style="text-align: center;">
+		<thead class="thead-dark">
+			<tr>
+				<th rowspan="2">Semestre</th>
+				<th rowspan="2">Liste des Modules
+	
+				</th>
+				<th rowspan="2">VH Global du module</th>
+				<th rowspan="2">Département dont relève le module</th>
+				<th colspan="4">Coordonnateur du module</th>
+			</tr>
+			<tr>
+				<th>Nom et prénom</th>
+				<th>Etablissement</th>
+				<th>Département</th>
+				<th>Spécialité</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td rowspan="6">S5</td>
+				<td>M25 : Traitement Numérique de l'Information Multimédia</td>
+				<td>56 h</td>
+				<td>Département Informatique</td>
+				<td>ADIB Abdellah</td>
+				<td>Faculté Sciences et Techniques Mohammedia</td>
+				<td>Département Informatiqu</td>
+				<td>Informatique et Traitement de l’information</td>
+			</tr>
+			<tr>
+				<td>M26 : Technologie Web pour le Multimédia</td>
+				<td>56 h</td>
+				<td>Département Informatique</td>
+				<td>MOUMKINE Noureddine</td>
+				<td>Faculté Sciences et Techniques Mohammedia</td>
+				<td>Département Informatiqu</td>
+				<td>Informatique</td>
+			</tr>
+			<tr>
+				<td>M27 : Théorie de l’Information</td>
+				<td>56 h</td>
+				<td>Département Informatique</td>
+				<td>KHADIR Omar</td>
+				<td>Faculté Sciences et Techniques Mohammedia</td>
+				<td>Département de Mathématiques</td>
+				<td> Mathématiques</td>
+			</tr>
+			<tr>
+				<td>M28 : Base de données
+					Multimédia
+					</td>
+				<td>56 h</td>
+				<td>Département Informatique</td>
+				<td>KHALIL Mohammed</td>
+				<td>Faculté Sciences et Techniques Mohammedia</td>
+				<td>Département Informatiqu</td>
+				<td>Informatique</td>
+			</tr>
+			<tr>
+				<td>M29 : Conduite de projets Multimédias
+					</td>
+				<td>56 h</td>
+				<td>Département Informatique</td>
+				<td>CHANTIT Salima</td>
+				<td>Faculté Sciences et Techniques Mohammedia</td>
+				<td>Département Informatiqu</td>
+				<td>Informatique</td>
+			</tr>
+			<tr>
+				<td>M30 : Architecture et programmation réseaux
+					</td>
+				<td>56 h</td>
+				<td>Département Informatique</td>
+				<td>MOUMKINE Noureddine</td>
+				<td>Faculté Sciences et Techniques Mohammedia</td>
+				<td>Département Informatiqu</td>
+				<td>Informatique</td>
+			</tr>
+			<tr>
+				<td colspan="2">VH global du semestre 5</td>
+				<td>336 h</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="4">S6</td>
+				<td>M31 : Transmission de données multimédia</td>
+				<td>56 h</td>
+				<td>Département Informatique</td>
+				<td>ADIB Abdellah</td>
+				<td>Faculté Sciences et Techniques Mohammedia</td>
+				<td>Département Informatiqu</td>
+				<td>Informatique et Traitement de l’information</td>
+			</tr>
+			<tr>
+				<td>M32 : Multimédia sur IP et Qualité de services</td>
+				<td>56 h</td>
+				<td>Département Informatique</td>
+				<td>LEGHIRS Cherkaoui</td>
+				<td>Faculté Sciences et Techniques Mohammedia</td>
+				<td>Département Informatiqu</td>
+				<td>Informatique et Traitement de l’information</td>
+			</tr>
+			<tr>
+				<td>M33 : Programmation Multimédia Mobile</td>
+				<td>56 h</td>
+				<td>Département Informatique</td>
+				<td>NOUA Mohamed Amine</td>
+				<td>Faculté Sciences et Techniques Mohammedia</td>
+				<td>Département Informatiqu</td>
+				<td>Informatique et Traitement de l’information</td>
+			</tr>
+			<tr>
+				<td>PFE</td>
+				<td>168 h</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan="2">VH global du semestre 6</td>
+				<td>336 h</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+
+	</table><br><br>
+	
+
+    <section class="section lb page-section">
+		<div class="container">
+			 <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Timeline de l'année</h3>
+                </div>
+            </div><!-- end title -->
+			<div class="timeline">
+				<div class="timeline__wrap">
+					<div class="timeline__items">
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>Septembre</h2>
+								<p>Cours de la phase 1 du premier semestre.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>Octobre</h2>
+								<p>Avancement des cours et comencement des mini-projet et TP.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>Novembre</h2>
+								<p>passer les colles de TP et commencement de la phase 2 du premier semesetre.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>Decemebre</h2>
+								<p>Avancement des cours et commencement des TP et mini-projet</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>Janvier</h2>
+								<p>Colle des TP + Vacance et preparation pour le deuxieme semestre une opportunites aussi pour chercher un stage.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>Fevrier</h2>
+								<p>Commencement des cours de la phase 1 du deuxieme semestre en prallele avec les mini-projet et les TP.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>Mars</h2>
+								<p>Colle des TP en parallele avec les Exams.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>Avril</h2>
+								<p>PFE : Sortie en stage pour 2 mois, les etudiant n'ayant pas trouver de stage auront des projet interne.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>May</h2>
+								<p>Presentation des PFE et ouverture des candidatures pour les MST.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://sca.univh2c.ma/"><img src="images/uh2_favicon-w.png" alt="" style="padding-top: 1.2rem;" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.coursera.org/"><img src="images/coursera-logo.png" alt="" style="padding-top: 2rem;" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.projet-saleem.org/"><img src="images/saleem_logo-w.png" alt="" style="padding-top: 1.5rem;" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="http://anapec.org/sigec-app-rv/"><img src="images/anapec-logo-w.png" alt="" class="img-repsonsive"></a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Description</h3>
+                        </div>
+                        <p> ce site a ete creer comme objet du mini-projet du module TWM.</p>   
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-google"></i></a></li>
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Sources</Source></h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Acceuil</a></li>
+                            <li><a href="#">Actualites</a></li>
+                            <li><a href="#">Candidature</a></li>
+							<li><a href="#">Encadrants</a></li>
+							<li><a href="#">Rechercher</a></li>
+                            <li><a href="#">A Propos</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contacts</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">contact@fstm.ac.ma</a></li>
+                            <li><a href="index.html">www.fstm.ac.ma</a></li>
+                            <li>Faculté des Sciences et Techniques de Mohammedia BP 146 Mohammedia 28806 Maroc</li>
+                            <li>+212523314708</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">Tout Droits Reservees. &copy; 2021 <a href="#">LST IRM</a> Design par : <a href="https://html.design/">Haddan & Talambouti</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+	<script src="js/timeline.min.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+</body>
+</html>
